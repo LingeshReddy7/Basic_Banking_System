@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".Add_User">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Enter Details"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        android:layout_marginBottom="50dp" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint=" Name*"
+        android:textStyle="italic"
+        android:textColor="#ED930E"
+        android:textSize="20dp"
+       android:layout_below="@+id/textView2"
+        />
+
+    <EditText
+        android:id="@+id/user_acno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint=" Account Number*"
+        android:inputType="phone"
+        android:textColor="#6F2EE4"
+        android:textSize="20dp"
+        android:layout_below="@+id/user_name" />
+
+    <EditText
+        android:id="@+id/user_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint=" Branch Name*"
+        android:textColor="#3E56DA"
+        android:textSize="20dp"
+       android:layout_below="@+id/user_acno" />
+
+    <TextView
+        android:id="@+id/user_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Initial Balance  000.0"
+        android:textColor="#3B53D5"
+        android:textSize="20dp"
+       android:layout_below="@+id/user_branch"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:backgroundTint="#C8F1ED"
+        android:text="Add User"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="200dp"
+       android:layout_below="@+id/user_amount" />
+
+    </RelativeLayout>
+</ScrollView>

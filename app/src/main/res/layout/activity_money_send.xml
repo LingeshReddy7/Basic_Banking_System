@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".moneySendActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To "
+        android:textSize="30sp"
+        android:id="@+id/to"
+        android:textColor="#080909"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/to"
+        android:text="Name"
+        android:id="@+id/ssname"
+        android:textColor="#080909"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ac.No."
+        android:textSize="30sp"
+        android:textColor="#080909"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/to"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/to"
+        android:text="11********22"
+        android:id="@+id/acno1"
+        android:textColor="#080909"
+        android:layout_below="@+id/ssname"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Amount"
+        android:id="@+id/aaa"
+        android:textColor="#080909"
+        android:layout_below="@+id/acno1"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sentamount"
+        android:layout_below="@+id/acno1"
+        android:layout_toRightOf="@+id/to"
+        android:layout_marginLeft="90dp"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:textColor="#F81A0A"
+        android:hint="money"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sentamount"
+        android:layout_marginTop="80dp"
+        android:textColor="#0F1010"
+        android:text="Pay"
+        android:id="@+id/send"
+        android:backgroundTint="#C0EFEA"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
